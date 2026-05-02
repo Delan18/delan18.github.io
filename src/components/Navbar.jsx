@@ -11,12 +11,19 @@ function Navbar({ theme, client }) {
       </Link>
 
       <div className="flex gap-8 items-center">
-        <a href="#projets" className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}>
-          Projets
-        </a>
-        <a href="#experiences" className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}>
+        <button
+          onClick={() => document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' })}
+          className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}
+        >
           Expériences
-        </a>
+        </button>
+
+        <button
+          onClick={() => document.getElementById('projets')?.scrollIntoView({ behavior: 'smooth' })}
+          className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}
+        >
+          Projets
+        </button>
         <a href="https://www.linkedin.com/in/delany-pulgarin" target="_blank" rel="noreferrer" className={`text-sm font-medium ${theme.accent} hover:underline`}>
           LinkedIn
         </a>

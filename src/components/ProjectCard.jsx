@@ -5,7 +5,7 @@ function ProjectCard({ project, theme, client }) {
 
   return (
     <div
-      onClick={() => navigate(`/${client}/project/${project.id}`)}
+      onClick={() => navigate(client === 'aero' ? `/aero/project/${project.id}` : `/project/${project.id}`)}
       className={`${theme.card} rounded-xl p-6 cursor-pointer hover:scale-105 transition-transform duration-200`}
     >
       {project.badge && (
