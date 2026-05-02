@@ -5,7 +5,12 @@ function ProjectCard({ project, theme, client }) {
 
   return (
     <div
-      onClick={() => navigate(client === 'aero' ? `/aero/project/${project.id}` : `/project/${project.id}`)}
+      onClick={() => {
+  console.log('client:', client)
+  console.log('project.id:', project.id)
+  console.log('navigating to:', client === 'aero' ? `/aero/project/${project.id}` : `/project/${project.id}`)
+  navigate(client === 'aero' ? `/aero/project/${project.id}` : `/project/${project.id}`)
+}}
       className={`${theme.card} rounded-xl p-6 cursor-pointer hover:scale-105 transition-transform duration-200`}
     >
       {project.badge && (
