@@ -41,7 +41,7 @@ function ProjectDetail() {
 
         {/* RETOUR */}
         <button
-          onClick={() => navigate(`/${client}`)}
+          onClick={() => navigate(client === 'aero' ? '/aero' : '/')}
           className={`mb-8 text-sm font-medium hover:underline`}
           style={{ color: theme.accent }}
         >
