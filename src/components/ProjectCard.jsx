@@ -5,8 +5,8 @@ function ProjectCard({ project, theme, client }) {
 
   return (
     <div
-      onClick={() => navigate(`/${client}/project/${project.id}`)}
-      className={`${theme.card} rounded-xl p-6 cursor-pointer hover:scale-105 transition-transform duration-200`}
+      onClick={() => navigate(client === 'aero' ? `/aero/project/${project.id}` : `/project/${project.id}`)}
+      className={`${theme.card} rounded-xl p-6 cursor-pointer hover:scale-105 transition-transform duration-200 relative`}
     >
       {project.badge && (
         <div className="absolute -top-3 left-4">
@@ -21,7 +21,8 @@ function ProjectCard({ project, theme, client }) {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className={`text-xs px-2 py-1 rounded-full ${theme.accentBg} text-white font-medium`}
+            className="text-xs px-2 py-1 rounded-full text-white font-medium"
+            style={{ backgroundColor: theme.accentBg }}
           >
             {tag}
           </span>
