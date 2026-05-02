@@ -11,9 +11,10 @@ function RedirectHandler() {
     const params = new URLSearchParams(window.location.search)
     const redirect = params.get('redirect')
     if (redirect) {
+      window.history.replaceState(null, '', redirect)
       navigate(redirect, { replace: true })
     }
-  }, [])
+  }, [navigate])
   return null
 }
 
