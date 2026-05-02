@@ -12,17 +12,27 @@ function Navbar({ theme, client }) {
 
       <div className="flex gap-8 items-center">
         <button
-          onClick={() => document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' })}
-          className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}
-        >
-          Expériences
-        </button>
-
-        <button
-          onClick={() => document.getElementById('projets')?.scrollIntoView({ behavior: 'smooth' })}
+          onClick={() => {
+            navigate(client === 'aero' ? '/aero' : '/')
+            setTimeout(() => {
+              document.getElementById('projets')?.scrollIntoView({ behavior: 'smooth' })
+            }, 100)
+          }}
           className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}
         >
           Projets
+        </button>
+
+        <button
+          onClick={() => {
+            navigate(client === 'aero' ? '/aero' : '/')
+            setTimeout(() => {
+              document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' })
+            }, 100)
+          }}
+          className={`text-sm font-medium ${theme.subtext} hover:underline transition-colors`}
+        >
+          Expériences
         </button>
         <a href="https://www.linkedin.com/in/delany-pulgarin" target="_blank" rel="noreferrer" className={`text-sm font-medium ${theme.accent} hover:underline`}>
           LinkedIn
