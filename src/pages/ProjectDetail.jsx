@@ -7,8 +7,9 @@ const configs = {
   corporate: corporateConfig,
 }
 
-function ProjectDetail() {
-  const { client, id } = useParams()
+function ProjectDetail({ client }) {
+  const { id } = useParams()
+  const { client: clientParam } = useParams()
   const navigate = useNavigate()
   const config = configs[client]
   const { theme } = config

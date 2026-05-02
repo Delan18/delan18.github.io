@@ -11,10 +11,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home client="corporate" />} />
         <Route path="/aero" element={<Home client="aero" />} />
-        <Route path="/project/:id" element={<ProjectDetail />} />
-        <Route path="/aero/project/:id" element={<ProjectDetail />} />
-        <Route path="/experience/:id" element={<ExperienceDetail />} />
-        <Route path="/aero/experience/:id" element={<ExperienceDetail />} />
+        <Route path="/project/:id" element={<ProjectDetail client="corporate" />} />
+        <Route path="/aero/project/:id" element={<ProjectDetail client="aero" />} />
+        <Route path="/experience/:id" element={<ExperienceDetail client="corporate" />} />
+        <Route path="/aero/experience/:id" element={<ExperienceDetail client="aero" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
