@@ -5,7 +5,7 @@ function ExperienceCard({ experience, theme, client }) {
 
   return (
     <div
-      onClick={() => navigate(client === 'aero' ? `/aero/experience/${experience.id}` : `/experience/${experience.id}`)}
+      onClick={() => navigate(`/${client}/experience/${experience.id}`)}
       className={`${theme.card} rounded-xl p-6 cursor-pointer hover:scale-105 transition-transform duration-200`}
     >
       <div className="flex items-center gap-4 mb-3">

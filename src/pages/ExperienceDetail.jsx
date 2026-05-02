@@ -28,7 +28,7 @@ function ExperienceDetail() {
 
         {/* RETOUR */}
         <button
-          onClick={() => navigate(client === 'aero' ? '/aero' : '/')}
+          onClick={() => navigate(`/${client}`)}
           className="mb-8 text-sm font-medium hover:underline"
           style={{ color: theme.accent }}
         >
