@@ -147,7 +147,49 @@ function ProjectDetail({ client }) {
               )}
             </div>
           </div>
+      
         )}
+
+        {/* DESCRIPTION */}
+        <h3>Mes apprentissages</h3>
+        <p className={`text-base leading-relaxed mb-12 ${theme.subtext}`}>
+          {project.learnings}
+        </p>
+
+        {/* IMAGES 4 & 5 côte à côte */}
+        {(project.image4 || project.image5) && (
+          <div className="mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {project.image4 && (
+                <div className="flex flex-col gap-2">
+                  <img
+                    src={project.image4}
+                    alt={`${project.title} - vue 2`}
+                    className="w-full h-auto max-h-[500px] object-contain rounded-xl"
+                  />
+                  <p className={`text-sm text-center ${theme.subtext}`}>
+                    {project.caption2 || 'Vue du rover — angle 2'}
+                  </p>
+                </div>
+              )}
+              {project.image5 && (
+                <div className="flex flex-col gap-2">
+                  <img
+                    src={project.image5}
+                    alt={`${project.title} - vue 3`}
+                    className="w-full h-auto max-h-[500px] object-contain rounded-xl"
+                  />
+                  <p className={`text-sm text-center ${theme.subtext}`}>
+                    {project.caption3 || 'Vue du rover — angle 3'}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+      
+        )}
+
+
         {/* VIDÉO */}
         {project.video && (
           <div className="mb-12">

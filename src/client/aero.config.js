@@ -45,6 +45,9 @@ const aeroConfig = {
       github: '',
       demo: null,
       description: 'Dans le cadre d\'un projet de fin de session à Polytechnique Montréal, j\'ai participé à la conception d\'un rover lunaire. J\'ai été responsable de la conception du système de déplacement, qui avait comme mission l\'exploration d\'un milieu inconnu. J\'ai également travaillé sur la communication en temps réel entre une interface web et le robot, permettant le contrôle à distance du rover.',
+      learning: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
+      image4: roverImg2,
+      image5: roverImg2,
       sections: [
         {
           title: 'Système de déplacement',

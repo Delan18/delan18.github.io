@@ -1,15 +1,22 @@
 import corporate from '../assets/corporate.jpg'
 import logoRogue from '../assets/rogue/logoRogue.png'
 import logoVideotron from '../assets/videotron/logoVideotron.webp'
+
 import desjunglesImg2 from '../assets/desjungles/desjunglesImg1.jpg'
 import desjunglesImg1 from '../assets/desjungles/logoDesjungles.png'
-import roverCorpImg from '../assets/rover/rover.jpg'
 import desjunglesImg3 from '../assets/desjungles/desjunglesImg2.jpg'
-import jeuxImg2 from '../assets/game/jeuxImg1.png'
+import desjunglesImg4 from '../assets/desjungles/desjunglesImg2.jpg'
+import desjunglesImg5 from '../assets/desjungles/desjunglesImg2.jpg'
 
+import roverCorpImg from '../assets/rover/rover.jpg'
+
+import jeuxImg2 from '../assets/game/jeuxImg1.png'
 import jeuxImg3 from '../assets/game/jeuxImg2.png'
+
 import logoMetG from '../assets/metg/logoMetG.jpg'
+
 import timmoImg2 from '../assets/nosotech/logoNosotech.png'
+
 import inventUsImg2 from '../assets/inventusImg1.png'
 // PLACEHOLDERS — remplace par les vrais imports plus tard
  const jeuxImg1 = null
@@ -34,7 +41,7 @@ const corporateConfig = {
     {
       id: 'desjungles',
       title: 'Desjungles — Application mobile bancaire',
-      tags: ['Node.js', 'React Native', 'MongoDB', 'BlazeFace', 'WhisperAI', 'Expo Go'],
+      tags: ['Node.js', 'Typescript', 'MongoDB', 'BlazeFace', 'WhisperAI', 'Expo Go'],
       badge: "Prix Desjardins - Conuhacks",
       summary: 'Application bancaire intelligente qui s\'adapte à l\'environnement de l\'utilisateur.',
       image1: desjunglesImg1,
@@ -45,6 +52,9 @@ const corporateConfig = {
       github: 'https://github.com/cristina-trofimov/desjungles/tree/master',
       demo: null,
       description: 'Application bancaire permettant à l\'utilisateur de transférer de l\'argent entre ses comptes ou vers d\'autres personnes, tout en s\'adaptant à son environnement de façon créative.\n Ce projet a été fait dans le cadre du hackathon anuel de l\'université concordia de 2026, où notre équipe a remporté le premier prix Desjardins',
+      learning: 'Ce projet  m\'a permit d\'apprendre à développer une application mobile qui intègre plusieurs modules en si peu de temps. En équipe, nous avions appris à diviser les tâches pour être efficaces. Enfin, j\'ai également appris à utiliser plusieur outils d\' intelligence artificielle avec des API externe de blazeface. J\'ai donc pu explorer plusieurs modèles et leur utilisation.',
+      image4: desjunglesImg4,
+      image5: desjunglesImg5,
       sections: [
         {
           title: 'Mode espion',
@@ -63,13 +73,16 @@ const corporateConfig = {
     {
       id: 'rover',
       title: 'Rover Lunaire — Robot connecté à une interface web',
-      tags: ['Docker', 'WebSocket', 'REST API', 'Gestion de projet'],
+      tags: ['Docker', 'WebSocket', 'REST API', 'Pyside'],
       badge: 'Projet intégrateur - Polytechnique Montréal',
       summary: 'Déploiement conteneurisé et interface web temps réel pour le contrôle d\'un rover.',
       image1: roverCorpImg,
       github: '',
       demo: null,
       description: 'Volet infrastructure et communication du projet rover. Conteneurisation avec Docker et conception de la couche de communication temps réel entre l\'interface web et le robot.',
+      learning: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
+      image4: desjunglesImg4,
+      image5: desjunglesImg5,
       sections: [
         {
           title: 'Infrastructure Docker',
@@ -85,7 +98,7 @@ const corporateConfig = {
       id: 'videogame',
       title: 'Jeux vidéo - Développement Unity',
       tags: ['C#', 'Unity', 'Hackathon'],
-      badge: 'Prix techniue - Hackathon PolyJam',
+      badge: 'Prix technique - Hackathon PolyJam',
       summary: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigmen en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
       image1: jeuxImg1,
       image2: jeuxImg2,
@@ -95,6 +108,9 @@ const corporateConfig = {
       github:'',
       demo: null,
       description: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigmen en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
+      learning: 'Ce projet m\' a permis de mettre à défis mes compétence en jeux vidéo dans un environnement compétitifs. Nous devions être à la fois programmeur et artiste. Nous étions contents du résultat final et fiers d\'avoir remporté le prix technique.',
+      image4: desjunglesImg4,
+      image5: desjunglesImg5,
       sections: [
         
       ],
@@ -112,6 +128,9 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Projet réalisé en collaboration avec Nosotech et Polytechnique Montréal, axé sur l\'extraction automatisée de données par intelligence artificielle et le développement d\'une interface web.',
+      learning: 'Ce fut mon projet final de baccalauréat où j\'ai appris beaucoup. J\'ai travaillé avec un réel client, Nosotech, avec qui je devais communiquer avec lui, confirmer ses besoins et lui présenter les avancements. Nous avions pu également apprendre comment créer un modèle d\'intelligence artificielle, générer des données synthétiques et entraîner le modèle.',
+      image4: desjunglesImg4,
+      image5: desjunglesImg5,
       sections: [
         {
           title: 'Extraction automatisée par IA',
@@ -139,6 +158,9 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Projet académique de développement full-stack réalisé à Polytechnique Montréal, couvrant l\'ensemble du cycle de vie d\'une application web.',
+      learning: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
+      image4: desjunglesImg4,
+      image5: desjunglesImg5,
       sections: [
         {
           title: 'Développement full-stack',
