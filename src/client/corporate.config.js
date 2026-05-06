@@ -52,7 +52,7 @@ const corporateConfig = {
       github: 'https://github.com/cristina-trofimov/desjungles/tree/master',
       demo: null,
       description: 'Application bancaire permettant à l\'utilisateur de transférer de l\'argent entre ses comptes ou vers d\'autres personnes, tout en s\'adaptant à son environnement de façon créative.\n Ce projet a été fait dans le cadre du hackathon anuel de l\'université concordia de 2026, où notre équipe a remporté le premier prix Desjardins',
-      learning: 'Ce projet  m\'a permit d\'apprendre à développer une application mobile qui intègre plusieurs modules en si peu de temps. En équipe, nous avions appris à diviser les tâches pour être efficaces. Enfin, j\'ai également appris à utiliser plusieur outils d\' intelligence artificielle avec des API externe de blazeface. J\'ai donc pu explorer plusieurs modèles et leur utilisation.',
+      learnings: 'Ce projet  m\'a permit d\'apprendre à développer une application mobile qui intègre plusieurs modules en si peu de temps. En équipe, nous avions appris à diviser les tâches pour être efficaces. Enfin, j\'ai également appris à utiliser plusieur outils d\' intelligence artificielle avec des API externe de blazeface. J\'ai donc pu explorer plusieurs modèles et leur utilisation.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
@@ -80,7 +80,7 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Volet infrastructure et communication du projet rover. Conteneurisation avec Docker et conception de la couche de communication temps réel entre l\'interface web et le robot.',
-      learning: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
+      learnings: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
@@ -128,7 +128,7 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Projet réalisé en collaboration avec Nosotech et Polytechnique Montréal, axé sur l\'extraction automatisée de données par intelligence artificielle et le développement d\'une interface web.',
-      learning: 'Ce fut mon projet final de baccalauréat où j\'ai appris beaucoup. J\'ai travaillé avec un réel client, Nosotech, avec qui je devais communiquer avec lui, confirmer ses besoins et lui présenter les avancements. Nous avions pu également apprendre comment créer un modèle d\'intelligence artificielle, générer des données synthétiques et entraîner le modèle.',
+      learnings: 'Ce fut mon projet final de baccalauréat où j\'ai appris beaucoup. J\'ai travaillé avec un réel client, Nosotech, avec qui je devais communiquer avec lui, confirmer ses besoins et lui présenter les avancements. Nous avions pu également apprendre comment créer un modèle d\'intelligence artificielle, générer des données synthétiques et entraîner le modèle.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
@@ -158,7 +158,7 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Projet académique de développement full-stack réalisé à Polytechnique Montréal, couvrant l\'ensemble du cycle de vie d\'une application web.',
-      learning: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
+      learnins: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
