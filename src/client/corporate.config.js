@@ -108,7 +108,7 @@ const corporateConfig = {
       github:'',
       demo: null,
       description: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigmen en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
-      learning: 'Ce projet m\' a permis de mettre à défis mes compétence en jeux vidéo dans un environnement compétitifs. Nous devions être à la fois programmeur et artiste. Nous étions contents du résultat final et fiers d\'avoir remporté le prix technique.',
+      learnings: 'Ce projet m\' a permis de mettre à défis mes compétence en jeux vidéo dans un environnement compétitifs. Nous devions être à la fois programmeur et artiste. Nous étions contents du résultat final et fiers d\'avoir remporté le prix technique.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
