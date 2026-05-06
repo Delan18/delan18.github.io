@@ -158,7 +158,7 @@ const corporateConfig = {
       github: '',
       demo: null,
       description: 'Projet académique de développement full-stack réalisé à Polytechnique Montréal, couvrant l\'ensemble du cycle de vie d\'une application web.',
-      learnins: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
+      learnings: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
       sections: [
