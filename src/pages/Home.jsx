@@ -3,6 +3,8 @@ import corporateConfig from '../client/corporate.config'
 import ProjectCard from '../components/ProjectCard'
 import ExperienceCard from '../components/ExperienceCard'
 import Navbar from '../components/Navbar'
+import roverImg from '../assets/rover/rover.jpg'
+
 
 const configs = {
   aero: aeroConfig,
@@ -12,7 +14,7 @@ const configs = {
 function Home({ client }) {
   const config = configs[client]
   const { theme, hero, projects, experiences } = config
-
+  console.log(roverImg)
   return (
     <div className={`min-h-screen ${theme.bg} ${theme.text}`}>
 
