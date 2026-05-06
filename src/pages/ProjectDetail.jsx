@@ -22,6 +22,8 @@ function ProjectDetail({ client }) {
       </div>
     )
   }
+  console.log(project)
+
 
   return (
     <div className={`min-h-screen ${theme.bg} ${theme.text}`}>
@@ -149,7 +151,6 @@ function ProjectDetail({ client }) {
           </div>
       
         )}
-
         {/* DESCRIPTION */}
         <h3>Mes apprentissages</h3>
         <p className={`text-base leading-relaxed mb-12 ${theme.subtext}`}>
