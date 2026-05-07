@@ -37,13 +37,13 @@ function Navbar({ theme, client }) {
         <a href="https://www.linkedin.com/in/delany-pulgarin" target="_blank" rel="noreferrer" className={`text-sm font-medium ${theme.accent} hover:underline`}>
           LinkedIn
         </a>
-        <button
+        {/* <button
           onClick={() => navigate(client === 'aero' ? '/' : '/aero')}
           className="text-sm font-medium px-4 py-2 rounded-lg border transition-opacity hover:opacity-80"
           style={{ borderColor: theme.accentBg, color: theme.accent }}
         >
-          {client === 'aero' ? '💼 Corporate' : '🚀 Aérospatial'}
-        </button>
+          {client === 'aero' ? ' Corporate' : ' Aérospatial'}
+        </button> */}
       </div>
 
     </nav>

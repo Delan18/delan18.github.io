@@ -30,13 +30,13 @@ function ProjectDetail({ client }) {
 
       {/* HERO IMAGE */}
       {project.image1 && (
-        <div className="w-full h-72 md:h-96 overflow-hidden relative">
+        <div className="w-full h-72 md:h-94 overflow-hidden relative">
           <img
             src={project.image1}
             alt={project.title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/10" />
         </div>
       )}
 
@@ -52,13 +52,24 @@ function ProjectDetail({ client }) {
         </button>
 
         {/* TITRE + TAGS */}
-        <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+        {/* TITRE + BADGE2 */}
+        <div className="flex items-start justify-between gap-4 mb-2">
+          <h1 className="text-4xl font-bold">{project.title}</h1>
+          {project.badge2 && (
+            <div className="flex items-center gap-2 bg-grey-800 text-blue-900 text-xs font-bold px-3 py-2 rounded-lg shadow-md shrink-0 mt-1">
+              <span>{project.badge2}</span>
+            </div>
+          )}
+        </div>
+        <h2 className="text-xl font-bold mb-8">{project.subtitle}</h2>
+      
+        <p className={`text-base leading-relaxed italic mb-4 ${theme.subtext}`}>{project.date}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-3 py-1 rounded-full text-white font-medium"
-              style={{ backgroundColor: theme.accentBg }}
+              className={`${theme.accentBg} text-white text-xs px-3 py-1 rounded-md font-medium`}
+              
             >
               {tag}
             </span>
@@ -152,7 +163,7 @@ function ProjectDetail({ client }) {
       
         )}
         {/* DESCRIPTION */}
-        <h3>Mes apprentissages</h3>
+        <h2 className="text-2xl font-bold mb-6" style={{ color: theme.accent }}>Mes apprentissages</h2>
         <p className={`text-base leading-relaxed mb-12 ${theme.subtext}`}>
           {project.learnings}
         </p>
@@ -169,7 +180,7 @@ function ProjectDetail({ client }) {
                     className="w-full h-auto max-h-[500px] object-contain rounded-xl"
                   />
                   <p className={`text-sm text-center ${theme.subtext}`}>
-                    {project.caption2 || 'Vue du rover — angle 2'}
+                    {project.caption4 || 'Vue 3'}
                   </p>
                 </div>
               )}
@@ -181,7 +192,7 @@ function ProjectDetail({ client }) {
                     className="w-full h-auto max-h-[500px] object-contain rounded-xl"
                   />
                   <p className={`text-sm text-center ${theme.subtext}`}>
-                    {project.caption3 || 'Vue du rover — angle 3'}
+                    {project.caption5 || 'Vue 4'}
                   </p>
                 </div>
               )}

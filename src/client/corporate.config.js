@@ -3,21 +3,47 @@ import logoRogue from '../assets/rogue/logoRogue.png'
 import logoVideotron from '../assets/videotron/logoVideotron.webp'
 
 import desjunglesImg2 from '../assets/desjungles/desjunglesImg1.jpg'
-import desjunglesImg1 from '../assets/desjungles/logoDesjungles.png'
+import desjunglesImg1 from '../assets/desjungles/desjunglesImg0.png'
 import desjunglesImg3 from '../assets/desjungles/desjunglesImg2.jpg'
-import desjunglesImg4 from '../assets/desjungles/desjunglesImg2.jpg'
-import desjunglesImg5 from '../assets/desjungles/desjunglesImg2.jpg'
+import desjunglesImg4 from '../assets/desjungles/desjunglesImg3.jpg'
+import desjunglesImg5 from '../assets/desjungles/desjunglesImg4.jpg'
+import desjunglesIcon from '../assets/desjungles/desjunglesIcon.png'
+
 
 import roverCorpImg from '../assets/rover/rover.jpg'
+import roverImg2 from '../assets/rover/rover2.png'
+import roverImg3 from '../assets/rover/rover3.png'
+import roverIcon from '../assets/rover/roverIcon.png'
+import roverVideo from '../assets/rover/roverVid1.mp4'
 
 import jeuxImg2 from '../assets/game/jeuxImg1.png'
 import jeuxImg3 from '../assets/game/jeuxImg2.png'
+import jeuxImg4 from '../assets/game/jeuxImg3.png'
+import jeuxImg5 from '../assets/game/jeuxImg4.png'
+import jeuxLogo from '../assets/game/jeuLogo.png'
+import jeuxIcon from '../assets/game/jeuxIcon.png'
 
 import logoMetG from '../assets/metg/logoMetG.jpg'
 
-import timmoImg2 from '../assets/nosotech/logoNosotech.png'
+import timmoLogo from '../assets/nosotech/logoNosotech.png'
+import timmoImg1 from '../assets/nosotech/nosotechImg1.png'
+import timmoImg2 from '../assets/nosotech/nosotechImg2.png'
+import timmoImg3 from '../assets/nosotech/nosotechImg3.png'
+import timmoImg4 from '../assets/nosotech/nosotechImg4.png'
+import timmoIcon from '../assets/nosotech/nosotechIcon.png'
 
-import inventUsImg2 from '../assets/inventusImg1.png'
+
+import inventUsImg1 from '../assets/inventusImg1.png'
+import inventUsImg2 from '../assets/inventusImg2.png'
+import inventUsImg3 from '../assets/inventusImg3.png'
+import inventUsImg4 from '../assets/inventusImg4.png'
+import inventUsImg5 from '../assets/inventusImg5.png'
+import inventUsIcon from '../assets/inventusIcon.png'
+
+
+
+import logoAstropoly from '../assets/astropoly/logoAstropoly.png'
+
 // PLACEHOLDERS — remplace par les vrais imports plus tard
  const jeuxImg1 = null
 // const desjunglesImg1 = null
@@ -40,9 +66,14 @@ const corporateConfig = {
   projects: [
     {
       id: 'desjungles',
-      title: 'Desjungles — Application mobile bancaire',
+      icon: desjunglesIcon,
+      title: 'Desjungles',
+      subtitle: 'Application mobile bancaire',
+      date: 'Janvier 2026',
       tags: ['Node.js', 'Typescript', 'MongoDB', 'BlazeFace', 'WhisperAI', 'Expo Go'],
-      badge: "Prix Desjardins - Conuhacks",
+      badge: "Prix Desjardins - Conuhacks 2026",
+      badge2: 'Hackathon de l\'université Concordia, Conuhacks 2026',
+      type: ['Développement logiciel', 'IA'],
       summary: 'Application bancaire intelligente qui s\'adapte à l\'environnement de l\'utilisateur.',
       image1: desjunglesImg1,
       image2: desjunglesImg2,
@@ -55,6 +86,8 @@ const corporateConfig = {
       learnings: 'Ce projet  m\'a permit d\'apprendre à développer une application mobile qui intègre plusieurs modules en si peu de temps. En équipe, nous avions appris à diviser les tâches pour être efficaces. Enfin, j\'ai également appris à utiliser plusieur outils d\' intelligence artificielle avec des API externe de blazeface. J\'ai donc pu explorer plusieurs modèles et leur utilisation.',
       image4: desjunglesImg4,
       image5: desjunglesImg5,
+      caption4: 'Page du compte banquaire',
+      caption5: 'Page du mode espion',
       sections: [
         {
           title: 'Mode espion',
@@ -71,66 +104,29 @@ const corporateConfig = {
       ],
     },
     {
-      id: 'rover',
-      title: 'Rover Lunaire — Robot connecté à une interface web',
-      tags: ['Docker', 'WebSocket', 'REST API', 'Pyside'],
-      badge: 'Projet intégrateur - Polytechnique Montréal',
-      summary: 'Déploiement conteneurisé et interface web temps réel pour le contrôle d\'un rover.',
-      image1: roverCorpImg,
-      github: '',
-      demo: null,
-      description: 'Volet infrastructure et communication du projet rover. Conteneurisation avec Docker et conception de la couche de communication temps réel entre l\'interface web et le robot.',
-      learnings: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
-      image4: desjunglesImg4,
-      image5: desjunglesImg5,
-      sections: [
-        {
-          title: 'Infrastructure Docker',
-          content: 'Conteneurisation complète du système pour garantir un déploiement fiable et reproductible sur différents environnements.',
-        },
-        {
-          title: 'Communication temps réel',
-          content: 'Conception de la couche WebSocket entre l\'interface web et le robot, permettant le contrôle et la visualisation en temps réel.',
-        },
-      ],
-    },
-    {
-      id: 'videogame',
-      title: 'Jeux vidéo - Développement Unity',
-      tags: ['C#', 'Unity', 'Hackathon'],
-      badge: 'Prix technique - Hackathon PolyJam',
-      summary: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigmen en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
-      image1: jeuxImg1,
-      image2: jeuxImg2,
-      image3: jeuxImg3,
-      caption2: 'Déplacement dans le jeu',
-      caption3: 'Déplacement dans le jeu, vue 2',
-      github:'',
-      demo: null,
-      description: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigmen en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
-      learnings: 'Ce projet m\' a permis de mettre à défis mes compétence en jeux vidéo dans un environnement compétitifs. Nous devions être à la fois programmeur et artiste. Nous étions contents du résultat final et fiers d\'avoir remporté le prix technique.',
-      image4: desjunglesImg4,
-      image5: desjunglesImg5,
-      sections: [
-        
-      ],
-
-    },
-    {
       id: 'nosotech',
-      title: 'TimmoHL7 - Extraction de données par IA',
+      icon: timmoIcon,
+      title: 'TimmoHL7',
+      subtitle: 'Application d\'extraction de données par IA',
+      date: 'Janvier à Avril 2026',
       tags: ['Python', 'Machine Learning', 'SQL', 'Angular', 'TypeScript', 'FullStack'],
-      badge: 'Projet Final - Nosotech et Polytechnique Motréal',
-      summary: 'Pipelines ML pour l\'extraction automatisée de données médicales et développement full-stack Angular.',
-      image1: null,
-      image2: timmoImg2,
-      image3: null,
+      badge: '',
+      badge2: 'Projet Final - Nosotech et Polytechnique Motréal',
+      type: ['Développement logiciel', 'IA'],
+      summary: 'Pipelines de machine learning pour l\'extraction automatisée de données médicales et développement full-stack en python.',
+      image1: timmoLogo,
+      image2: timmoImg1,
+      image3: timmoImg2,
+      caption2: 'Générateur de données synthétiques',
+      caption3: 'Formulaire de génération avec les possibles configurations',
       github: '',
       demo: null,
-      description: 'Projet réalisé en collaboration avec Nosotech et Polytechnique Montréal, axé sur l\'extraction automatisée de données par intelligence artificielle et le développement d\'une interface web.',
-      learnings: 'Ce fut mon projet final de baccalauréat où j\'ai appris beaucoup. J\'ai travaillé avec un réel client, Nosotech, avec qui je devais communiquer avec lui, confirmer ses besoins et lui présenter les avancements. Nous avions pu également apprendre comment créer un modèle d\'intelligence artificielle, générer des données synthétiques et entraîner le modèle.',
-      image4: desjunglesImg4,
-      image5: desjunglesImg5,
+      description: 'Projet réalisé en collaboration avec Nosotech, une compagnie de développement d\'outils logiciels dans le domaine médical, et Polytechnique Montréal. Ce projet avait comme objectif la génération de messages médicaux HL7 et l\'extraction automatisée de données importantes par intelligence artificielle. Il couvre également le développement d\'une interface web pour générer et interpréter les messages.',
+      learnings: 'Ce fut mon projet final de baccalauréat où j\'ai appris beaucoup. J\'ai travaillé avec un réel client, Nosotech, avec qui je devais communiquer, confirmer ses besoins et lui présenter les avancements. Nous avions pu également apprendre comment créer un modèle d\'intelligence artificielle, générer des données synthétiques et entraîner le modèle.',
+      image4: timmoImg3,
+      image5: timmoImg4,
+      caption4: 'Résultat du parsing du message suite au traitement par le modèle IA',
+      caption5: 'Formulaire du parser',
       sections: [
         {
           title: 'Extraction automatisée par IA',
@@ -147,24 +143,62 @@ const corporateConfig = {
       ],
     },
     {
-      id: 'fullstack-poly',
-      title: 'InventUs - Application Full-Stack',
-      tags: ['Full-Stack', 'SQL', 'GitLab', 'CI/CD', 'Gestion de projet'],
-      badge: 'Projet intégrateur - Polytechnique Montréal',
-      summary: 'Développement full-stack d\'une application web avec base de données, déploiement et gestion de projet via GitLab.',
-      image1: null,
-      image2: inventUsImg2,
-      image3: null,
-      github: '',
+      id: 'videogame',
+      icon: jeuxIcon,
+      title: 'Dia Jiro',
+      subtitle: 'Développement Unity de jeux vidéo',
+      date: 'Novembre 2025',
+      tags: ['C#', 'Unity', 'Hackathon'],
+      badge: 'Prix technique - PolyJam 2025',
+      badge2: 'Hackathon de Polytechnique Montréal, PolyJam 2025',
+      type: ['Développement de jeux vidéo'],
+      summary: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigme où le joueur éclaire sa route en parlant.',
+      image1: jeuxLogo,
+      image2: jeuxImg2,
+      image3: jeuxImg3,
+      caption2: 'Déplacement dans le jeu',
+      caption3: 'Déplacement dans le jeu, vue 2',
+      github:'https://maxlhu.itch.io/dia-jiro',
       demo: null,
-      description: 'Projet académique de développement full-stack réalisé à Polytechnique Montréal, couvrant l\'ensemble du cycle de vie d\'une application web.',
+      description: 'Développement d\'un jeu vidéo avec Unity. C\'est une jeu d\'énigme en FPS où le joueur éclaire sa route en parlant. Chaque fréquence vocale illumine un cristal différent dans une grotte plongée dans le noir.',
+      learnings: 'Ce projet m\' a permis de mettre à défis mes compétence en jeux vidéo dans un environnement compétitifs. Nous devions être à la fois programmeur et artiste. Nous étions contents du résultat final et fiers d\'avoir remporté le prix technique.',
+      image4: jeuxImg4,
+      image5: jeuxImg5,
+      caption4: 'Déplacement dans le jeu, vue 3',
+      caption5: 'Déplacement dans le jeu, vue 4',
+      sections: [
+        
+      ],
+
+    },
+    {
+      id: 'fullstack-poly',
+      icon: inventUsIcon,
+      title: 'InventUs',
+      subtitle: 'Application Full-Stack',
+      date: 'Août à Décembre 2024',
+      tags: ['Full-Stack', 'SQL', 'GitLab', 'CI/CD', 'Gestion de projet', 'MongoDB', 'Angular'],
+      badge:'',
+      badge2: 'Projet intégrateur - Polytechnique Montréal',
+      type: ['Développement web'],
+      summary: 'Développement full-stack d\'une application web avec base de données, déploiement et gestion de projet via GitLab.',
+      image1: inventUsImg1,
+      image2: inventUsImg2,
+      image3: inventUsImg3,
+      caption2: 'Choix de l\'avatar',
+      caption3: 'Vue du jeu avec logs et statistiques',
+      github: 'https://gitlab.com/polytechnique-montr-al/log2990/20243/equipe-106/LOG2990-106.git',
+      demo: null,
+      description: 'Projet académique de développement full-stack réalisé à Polytechnique Montréal. Ce projet couvre les étapes de développement, test et deploiement. Il s\'agit d\'un site web qui simule un jeux. Il intègre la notion de session multi-utilisateurs, des chats pour communiquer, de creation de documents (jeux) et de sauvegarde de données. ',
       learnings: 'InventUs m\'a permis d\'apprendre davantage sur le développement web. J\'ai appris à gérer des sessions d\'utilisateurs qui intéragissent en même temps dans une même session.',
-      image4: desjunglesImg4,
-      image5: desjunglesImg5,
+      image4: inventUsImg4,
+      image5: inventUsImg5,
+      caption4: 'Choix du map du jeux',
+      caption5: ' Salle d\'attente avec clavardage',
       sections: [
         {
           title: 'Développement full-stack',
-          content: 'Conception et développement complet de l\'application, couvrant le front-end, le back-end et la gestion de la base de données SQL.',
+          content: 'Conception et développement complet de l\'application, couvrant le front-end, le back-end et la gestion de la base de données sur MongoDB.',
         },
         {
           title: 'Déploiement & DevOps',
@@ -176,6 +210,37 @@ const corporateConfig = {
         },
       ],
     },
+    {
+      id: 'rover',
+      icon: roverIcon,
+      title: 'Rover Lunaire',
+      subtitle: 'Robot connecté à une interface web',
+      date: 'Janvier à Avril 2025',
+      tags: ['Docker', 'WebSocket', 'REST API', 'Pyside'],
+      badge: '',
+      badge2: 'Projet intégrateur - Polytechnique Montréal',
+      type: ['software dev', 'robotic'],
+      summary: 'Déploiement conteneurisé et interface web temps réel pour le contrôle d\'un rover.',
+      image1: roverCorpImg,
+      image2: roverImg2,
+      image3: roverImg3,
+      caption2: 'Cartographie du rover',
+      caption3: 'Environnement de simulation Gazebo',
+      github: 'https://gitlab.com/polytechnique-montr-al/inf3995/20251/equipe-201/INF3995-201.git',
+      demo: null,
+      description: 'Volet infrastructure et communication du projet rover. Conteneurisation avec Docker et conception de la couche de communication temps réel entre l\'interface web et le robot.',
+      learnings: 'Ce projet m\'a permis de toucher à la programmation embarqué et de comprendre comment plusieurs composates logicielles et informatiques intérgissent entre eux. Ce fut le projet parfit pour comprendre la communication entre les programmes au moyen d\'un réseaux wifi.',
+      sections: [
+        {
+          title: 'Infrastructure Docker',
+          content: 'Conteneurisation complète du système pour garantir un déploiement fiable et reproductible sur différents environnements.',
+        },
+        {
+          title: 'Communication temps réel',
+          content: 'Conception de la couche WebSocket entre l\'interface web et le robot, permettant le contrôle et la visualisation en temps réel.',
+        },
+      ],
+    }
   ],
   experiences: [
     {
@@ -207,6 +272,19 @@ const corporateConfig = {
       ],
     },
     {
+          id: 'astropoly',
+          company: 'Comité Astropoly',
+          role: 'Vice-Présidente en communication',
+          period: 'Sept 2024 – Présent',
+          logo: logoAstropoly,
+          summary: 'Organisation d\'événements et de conférences en astronomie et l\'aerospatiale.',
+          description: 'En tant que Vice-Présidente en communication du Comité Astropoly, je coordonne l\'organisation d\'événements et de conférences liés à l\'astronomie et à l\'exploration spatiale.',
+          bullets: [
+            'Organisation d\'événements et de conférences',
+            'Gestion des projets d\'astronomie',
+          ],
+        },
+    {
       id: 'm&g',
       company: 'M&G Contruction',
       role: 'Stagiaire — Optimisation Web SEO',
@@ -222,6 +300,7 @@ const corporateConfig = {
         'Utilisation d\'outils d\'analyse comme Google Console et Google Analytics'
       ],
     },
+    
   ],
 }
 
